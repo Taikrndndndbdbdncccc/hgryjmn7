@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Shop Event</h1>
+
+    <form id="orderForm">
+        <label>Nama Pemesan:</label>
+        <input type="text" id="name" required>
+
+        <label>Tanggal Acara:</label>
+        <input type="date" id="eventDate" required>
+
+        <label>Pilih Layanan:</label>
+        <select id="service">
+            <option value="Sound System">Sound System</option>
+            <option value="Lighting">Lighting</option>
+            <option value="Dekorasi">Dekorasi</option>
+        </select>
+
+        <button type="submit">Pesan Sekarang</button>
+    </form>
+
+    <h2>Daftar Pesanan</h2>
+    <ul id="orderList"></ul>
+
+    <!-- Firebase SDK -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
